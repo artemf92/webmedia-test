@@ -345,6 +345,7 @@ textarea {
   background-color: #fff;
   z-index: 999;
   box-shadow: 0px 4px 16px rgba(160, 160, 160, 0.07);
+  transition: transform 0.5s ease;
 }
 
 .page-header {
@@ -767,6 +768,7 @@ textarea {
 
 .slider-6 .block__desc:after {
   color: #282828;
+  background-color: #000;
 }
 
 .slider-6 .block__cover {
@@ -1203,6 +1205,10 @@ textarea {
   height: 10px;
 }
 
+.slider-carousel {
+  background-color: #000;
+}
+
 .background-text {
   position: absolute;
   font-family: 'Arimo', sans-serif;
@@ -1360,7 +1366,6 @@ body {
   }
 
   .black {
-    background-color: #000000;
     color: #F7F7F7;
   }
 
@@ -1371,10 +1376,6 @@ body {
 
   .black a {
     color: #F7F7F7;
-  }
-
-  .black .slider .block__desc:after {
-    background-color: #000;
   }
 }
 
@@ -1583,6 +1584,7 @@ body {
 
   .slider-8 .block__desc:after {
     color: #282828;
+    background-color: #000;
   }
 
   .slider-8 .block__cover {

@@ -35,6 +35,7 @@ $('.owl-2').owlCarousel({
   }
 });
 var wrapper = document.querySelector('.wrapper');
+var header = document.querySelector('.header-wrapper');
 var black = document.querySelector('.black');
 var owl = $('.owl-carousel');
 var carousel = document.querySelector('.owl-stage');
@@ -77,7 +78,24 @@ function activeCircle(transform) {
 
 
 function moveSlider(transform) {
-  if (transform == 0 || transform == 4 || transform == 6 || transform == 8) wrapper.classList.add('black');else wrapper.classList.remove('black');
+  if (transform == 0 || transform == 4 || transform == 6 || transform == 8) {
+    header.style.transform = "translateY(-71px)";
+    setTimeout(function () {
+      wrapper.classList.add('black');
+    }, 600);
+    setTimeout(function () {
+      header.style.transform = "translateY(0)";
+    }, 1000);
+  } else {
+    header.style.transform = "translateY(-71px)";
+    setTimeout(function () {
+      wrapper.classList.remove('black');
+    }, 600);
+    setTimeout(function () {
+      header.style.transform = "translateY(0)";
+    }, 1000);
+  }
+
   slidersWrapper.style.transform = "translateY(".concat(-10 * transform, "%)");
   slidersWrapper.dataset.transform = "".concat(-10 * transform);
   activeCircle(transform);
