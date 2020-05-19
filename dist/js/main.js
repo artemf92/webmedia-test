@@ -63,6 +63,7 @@ function startScroll() {
 
   slidersWrapper.style.transform = "translateY(-10%)";
   slidersWrapper.dataset.transform = '-10';
+  pagination.children[0].classList.add('active');
 } // Активация кружка пагинации слайдов
 
 
